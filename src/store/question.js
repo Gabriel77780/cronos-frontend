@@ -12,7 +12,7 @@ export const useQuestionStore = defineStore('questions', {
         async fetchQuestions() {
 
             try {
-                const response = await axios.get('http://localhost:8080/api/questions')
+                const response = await axios.get('https://cronos-backend-production.up.railway.app/api/questions')
                 const questions = response.data
                 this.questions = questions
             } catch (error) {
@@ -23,7 +23,7 @@ export const useQuestionStore = defineStore('questions', {
         async saveQuestion(question) {
 
             axios
-                .post('http://localhost:8080/api/questions/create', question)
+                .post('https://cronos-backend-production.up.railway.app/api/questions/create', question)
                 .then((response) => {
 
                 })
@@ -37,7 +37,7 @@ export const useQuestionStore = defineStore('questions', {
 
             try {
 
-                await axios.delete(`http://localhost:8080/api/questions/${questionId}`);
+                await axios.delete(`https://cronos-backend-production.up.railway.app/api/questions/${questionId}`);
 
 
             } catch (error) {
