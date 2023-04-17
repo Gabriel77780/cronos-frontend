@@ -1,6 +1,13 @@
 <template>
   <v-bottom-navigation v-model="selectedItem" color="primary" grow>
-    <v-btn style="max-width: none" v-for="(item, i) in items" :key="i" :to="item.to" exact>
+    <v-btn
+      color="secondary-darken-1"
+      style="max-width: none"
+      v-for="(item, i) in items"
+      :key="i"
+      :to="item.to"
+      exact
+    >
       <v-icon>{{ item.icon }}</v-icon>
       <span>{{ item.text }}</span>
     </v-btn>
@@ -14,7 +21,7 @@ export default {
       selectedItem: null,
       items: [
         { icon: 'mdi-home', text: 'Home', to: '/home' },
-        { icon: 'mdi-help', text: 'Add Question', to: '/addquestion' }
+        { icon: 'mdi-help', text: 'Questions', to: '/questions' }
       ]
     }
   }
