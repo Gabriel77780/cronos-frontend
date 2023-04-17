@@ -5,7 +5,7 @@ import routerGuards from './router-guards'
 import Main from '../views/Main.vue'
 import Login from '../views/Login.vue'
 import Home from '../views/Home.vue'
-import AddQuestion from '../views/AddQuestion.vue'
+import Questions from '../views/Questions.vue'
 
 const routes = [
 
@@ -20,9 +20,9 @@ const routes = [
 
             },
             {
-                path: '/addquestion',
-                name: 'Add Question',
-                component: AddQuestion,
+                path: '/questions',
+                name: 'Questions',
+                component: Questions,
 
             }],
         meta: {
