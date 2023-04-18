@@ -12,7 +12,7 @@ export const useQuestionStore = defineStore('questions', {
         async fetchQuestions() {
 
             try {
-                const response = await axios.get('https://cronos-backend-production.up.railway.app/api/questions')
+                const response = await axios.get(import.meta.env.VITE_BACKEND_API_URL + '/api/questions')
                 const questions = response.data
                 this.questions = questions
             } catch (error) {
@@ -23,7 +23,7 @@ export const useQuestionStore = defineStore('questions', {
         async saveQuestion(question) {
 
             axios
-                .post('https://cronos-backend-production.up.railway.app/api/questions/create', question)
+                .post(import.meta.env.VITE_BACKEND_API_URL + '/api/questions/create', question)
                 .then((response) => {
 
                 })
@@ -37,7 +37,7 @@ export const useQuestionStore = defineStore('questions', {
 
             try {
 
-                await axios.delete(`https://cronos-backend-production.up.railway.app/api/questions/${questionId}`);
+                await axios.delete(import.meta.env.VITE_BACKEND_API_URL + `/api/questions/${questionId}`);
 
 
             } catch (error) {

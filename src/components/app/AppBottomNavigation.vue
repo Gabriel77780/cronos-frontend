@@ -21,7 +21,8 @@ export default {
       selectedItem: null,
       items: [
         { icon: 'mdi-home', text: 'Home', to: '/home' },
-        { icon: 'mdi-help', text: 'Questions', to: '/questions' }
+        { icon: 'mdi-help', text: 'Questions', to: '/questions' },
+        { icon: 'mdi-test-tube', text: 'Quizzes', to: '/quizzes' }
       ]
     }
   }
