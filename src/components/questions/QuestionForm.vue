@@ -125,12 +125,12 @@ export default {
     formData() {
       return {
         questionText: this.questionText,
-        category: {
-          name: this.category,
-          subcategory: {
-            name: this.subcategory
-          }
-        },
+        // category: {
+        //   name: this.category,
+        //   subcategory: {
+        //     name: this.subcategory
+        //   }
+        // },
         answers: [
           { answerText: this.answerText1, correctAnswer: this.checkboxValues.correctAnswer1 },
           { answerText: this.answerText2, correctAnswer: this.checkboxValues.correctAnswer2 },

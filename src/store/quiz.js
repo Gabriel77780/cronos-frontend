@@ -79,6 +79,8 @@ export const useQuizStore = defineStore('quizzes', {
 
             if (currentQuestion.answers[index].correctAnswer) {
                 alert('Respuesta correcta')
+            } else {
+                alert('Respuesta incorrecta')
             }
 
             this.currentQuestionIndex++
