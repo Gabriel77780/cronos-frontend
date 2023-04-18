@@ -6,6 +6,8 @@ import Main from '../views/Main.vue'
 import Login from '../views/Login.vue'
 import Home from '../views/Home.vue'
 import Questions from '../views/Questions.vue'
+import Quizzes from '../views/Quizzes.vue'
+import TakeQuiz from '../views/TakeQuiz.vue'
 
 const routes = [
 
@@ -23,6 +25,18 @@ const routes = [
                 path: '/questions',
                 name: 'Questions',
                 component: Questions,
+
+            },
+            {
+                path: '/quizzes',
+                name: 'Quizzes',
+                component: Quizzes,
+
+            },
+            {
+                path: '/takequiz',
+                name: 'TakeQuiz',
+                component: TakeQuiz,
 
             }],
         meta: {
