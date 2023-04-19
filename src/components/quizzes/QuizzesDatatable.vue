@@ -8,7 +8,7 @@
       <thead>
         <tr>
           <th class="text-left">Question</th>
-          <th class="text-left">Add Questions</th>
+          <th class="text-left">Take Quiz</th>
           <th class="text-left">Delete</th>
         </tr>
       </thead>
